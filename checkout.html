@@ -5,8 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Handlekurv</title>
+    <link href="./ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="./ikoner/css/brands.css" rel="stylesheet">
+    <link href="./ikoner/css/solid.css" rel="stylesheet">
 </head>
 <body>
+    <header class="global-header">
+        <nav>
+            <label for="Search"></label>
+            <input type="search" id="search" name="search" placeholder="søk her">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <a href="index.html" id="Logo"><b>Logo</b></a>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#populære-produkter">Produkter</a></li>
+                <li><a href="#populære-kategorier">Kategorier</a></li>
+                <li><a href="footer">Kontakt oss</a></li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Kasse</h2>
+            <article>
+                <h2>1. SHOPPINGBAGEN DIN</h2>
+                <img src="./bilder/wedding-dress.jpg">
+                <h3>Product Name</h3>
+                <p>kr 1999</p>
+                <p>Farge Beige</p>
+            </article>
+            <article>
+                <img src="./bilder/wedding-dress.jpg">
+                <h3>Product Name</h3>
+                <p>kr 1999</p>
+                <p>Farge Beige</p>
+            </article>
+            <article>
+                <img src="./bilder/wedding-dress.jpg">
+                <h3>Product Name</h3>
+                <p>kr 1999</p>
+                <p>Farge Beige</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>2. DINE OPPLYSNINGER</h2>
+                <h3>Leveringsadresse</h3>
+                <form>
+                    <input type="text" id="Fornavn" name="fornavn" placeholder="Fornavn">
+                    <label for="Fornavn"></label>
+                    <input type="text" id="Etternavn" name="Etternavn" placeholder="Etternavn">
+                    <label for="Etternavn"></label>
+                    <input type="text" id="Gateadresse" name="Gateadresse" placeholder="Gateadresse">
+                    <label for="Gateadresse"></label>
+                    <input type="text" id="Postnummer" name="Postnummer" placeholder="Postnummer">
+                    <label for="Postnummer"></label>
+                    <input type="text" id="Poststed" name="Poststed" placeholder="Poststed">
+                    <label for="Poststed"></label>
+                    <input type="submit" value="Lagre">
+                    <a href="">Avbryt</a>
+                </form>
+            </article>
+        </section>
+
+        <section>
+            <h2>3. Levering</h2>
+            <article>
+                <h3>Leveringsvalg</h3>
+                <form>
+                    <!-- Avviker fra kurset, radio-->
+                    <input type="radio" id="Hjemlevering" name="Hjemlevering" value="Hjemlevering">
+                    <label for="Hjemlevering"><b>Ekspress Hjemlevering<b></label>
+                    <input type="radio" id="Utlevering" name="Utlervering" value="Utlevering">
+                    <label for="Hjemlevering"><b>Ekspress Pakke til Utleveringssted<b></label>
+                    <input type="radio" id="Standard" name="Standard" value="Standard">
+                    <label for="Hjemlevering"><b>Standard Hjemlevering<b></label>
+                </form>
+            </article>
+        </section>
+    </main>
     
 </body>
 </html>
