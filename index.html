@@ -10,17 +10,21 @@
     <link href="./ikoner/css/brands.css" rel="stylesheet">
     <link href="./ikoner/css/solid.css" rel="stylesheet">
 </head>
-
 <body>
-    <header class="global-header">
+    <header id="global-header">
         <nav>
-            <label for="Search"></label>
+            <form>
             <input type="search" id="search" name="search" placeholder="søk her">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            <a href="index.html" id="Logo"><b>Logo</b></a>
-            <ul>
+            <label for="search"></label>
+            </form>
+            <button><i class="fa-solid fa-magnifying-glass" id="fa-magnifying-glass"></i></button>
+
+            <ul class="right-list">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#populære-produkter">Produkter</a></li>
+                <a href="index.html" id="Logo"><b>Logo</b></a>
+            </ul>
+            <ul class="left-list">  
                 <li><a href="#populære-kategorier">Kategorier</a></li>
                 <li><a href="footer">Kontakt oss</a></li>
                 <li><i class="fa-solid fa-cart-shopping"></i></li>
@@ -29,48 +33,48 @@
     </header>
     <main>
         <section id="Banner">
-            <h2>Etiam eget lectus et erat consequat</h2>
+            <h2>Etiam eget lectus et erat consequat<br></h2>
             <p>Morbi sollicitudin magna et metus lobortis, eget blandit libero semper</p>
             <a href="">Få en prøve pakke i dag</a>
         </section>
         <section id="populære-produkter">
             <h2>Våre mest populære produkter</h2>
             <p>Oppdag det beste av det beste</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>New Product</th>
-                        <th>Special Price</th>
-                        <th>Best sellers</th>
-                    </tr>
-                </thead>
-            </table>
-            <article>
+             <article class="tre-valg">
+                <h3>New Product</h3>
+            </article>
+            <article class="tre-valg">
+                <h3>Special Price</h3>
+            </article>
+            <article class="tre-valg">
+                <h3>Best sellers</h3>
+            </article>   
+            <article class="produkt-kort">
                 <img src="./bilder/man-laptop.jpg" alt="bilde av laptop">
                 <h3>Product name</h3>
                 <p>kr 1999</p>
             </article>
-            <article>
+            <article class="produkt-kort">
                 <img src="./bilder/man-laptop.jpg" alt="bilde av laptop">
                 <h3>Product name</h3>
                 <p>kr 1999</p>
             </article>
-            <article>
+            <article class="produkt-kort">
                 <img src="./bilder/man-laptop.jpg" alt="bilde av laptop">
                 <h3>Product name</h3>
                 <p>kr 1999</p>
             </article>
-            <article>
+            <article class="produkt-kort">
                 <img src="./bilder/man-laptop.jpg" alt="bilde av laptop">
                 <h3>Product name</h3>
                 <p>kr 1999</p>
             </article>
-            <article>
+            <article class="produkt-kort">
                 <img src="./bilder/man-laptop.jpg" alt="bilde av laptop">
                 <h3>Product name</h3>
                 <p>kr 1999</p>
             </article>
-            <article>
+            <article class="produkt-kort">
                 <img src="./bilder/man-laptop.jpg" alt="bilde av laptop">
                 <h3>Product name</h3>
                 <p>kr 1999</p>
@@ -79,19 +83,19 @@
         <section id="populære-kategorier">
             <h2>Våre mest populære kategorier</h2>
             <p>Oppdag det beste av det beste</p>
-            <article>
+            <article class="kategori-kort">
                 <h3>Catogory 1</h3>
             </article>
-            <article>
+            <article class="kategori-kort">
                 <h3>Catogory 2</h3>
             </article>
-            <article>
+            <article class="kategori-kort">
                 <h3>Catogory 3</h3>
             </article>
-            <article>
+            <article class="kategori-kort">
                 <h3>Catogory 4</h3>
             </article>
-            <article>
+            <article class="kategori-kort">
                 <h3>Catogory 5</h3>
             </article>
         </section>
@@ -99,26 +103,28 @@
             <article>
                 <h2>Anmeldelser</h2>
             </article>
-            <article>
+            <article class="kategori-kort">
+                <img src="./bilder/dog.jpg" alt="Bilde av hund">
+
                 <h3>Rober Labrador</h3>
                 <p>Suspendisse tempus dui at sem mattis commodo ut at felis. Suspendisse nec turpis nec sem malesuada sodales ullamcorper vitae tellus. Pellentesque efficitur aliquet nisi, at interdum mi consequat eget. Pellentesque mattis tortor et odio lobortis molestie. Curabitur dictum est molestie libero pulvinar, porttitor rhoncus purus lobortis. Cras at lacus tincidunt, eleifend augue eu, pellentesque libero. Nunc rhoncus varius magna, ac tincidunt metus fermentum sit amet. Aliquam vestibulum gravida lacus vitae auctor. Vestibulum quis quam id ligula cursus efficitur id ac justo.</p>
             </article>
-            <article>
+            <article class="kategori-kort">
                 <img src="./bilder/dog.jpg" alt="Bilde av hund">
                 <h3>Rober Labrador</h3>
                 <p>Suspendisse tempus dui at sem mattis commodo ut at felis. Suspendisse nec turpis nec sem malesuada sodales ullamcorper vitae tellus. Pellentesque efficitur aliquet nisi, at interdum mi consequat eget. Pellentesque mattis tortor et odio lobortis molestie. Curabitur dictum est molestie libero pulvinar, porttitor rhoncus purus lobortis. Cras at lacus tincidunt, eleifend augue eu, pellentesque libero. Nunc rhoncus varius magna, ac tincidunt metus fermentum sit amet. Aliquam vestibulum gravida lacus vitae auctor. Vestibulum quis quam id ligula cursus efficitur id ac justo.</p>
             </article>
-            <article>
+            <article class="kategori-kort">
                 <img src="./bilder/dog.jpg" alt="Bilde av hund">
                 <h3>Rober Labrador</h3>
                 <p>Suspendisse tempus dui at sem mattis commodo ut at felis. Suspendisse nec turpis nec sem malesuada sodales ullamcorper vitae tellus. Pellentesque efficitur aliquet nisi, at interdum mi consequat eget. Pellentesque mattis tortor et odio lobortis molestie. Curabitur dictum est molestie libero pulvinar, porttitor rhoncus purus lobortis. Cras at lacus tincidunt, eleifend augue eu, pellentesque libero. Nunc rhoncus varius magna, ac tincidunt metus fermentum sit amet. Aliquam vestibulum gravida lacus vitae auctor. Vestibulum quis quam id ligula cursus efficitur id ac justo.</p>
             </article>
-            <article>
+            <article class="kategori-kort">
                 <img src="./bilder/dog.jpg" alt="Bilde av hund">
                 <h3>Rober Labrador</h3>
                 <p>Suspendisse tempus dui at sem mattis commodo ut at felis. Suspendisse nec turpis nec sem malesuada sodales ullamcorper vitae tellus. Pellentesque efficitur aliquet nisi, at interdum mi consequat eget. Pellentesque mattis tortor et odio lobortis molestie. Curabitur dictum est molestie libero pulvinar, porttitor rhoncus purus lobortis. Cras at lacus tincidunt, eleifend augue eu, pellentesque libero. Nunc rhoncus varius magna, ac tincidunt metus fermentum sit amet. Aliquam vestibulum gravida lacus vitae auctor. Vestibulum quis quam id ligula cursus efficitur id ac justo.</p>
             </article>
-            <article>
+            <article class="kategori-kort">
                 <img src="./bilder/dog.jpg" alt="Bilde av hund">
                 <h3>Rober Labrador</h3>
                 <p>Suspendisse tempus dui at sem mattis commodo ut at felis. Suspendisse nec turpis nec sem malesuada sodales ullamcorper vitae tellus. Pellentesque efficitur aliquet nisi, at interdum mi consequat eget. Pellentesque mattis tortor et odio lobortis molestie. Curabitur dictum est molestie libero pulvinar, porttitor rhoncus purus lobortis. Cras at lacus tincidunt, eleifend augue eu, pellentesque libero. Nunc rhoncus varius magna, ac tincidunt metus fermentum sit amet. Aliquam vestibulum gravida lacus vitae auctor. Vestibulum quis quam id ligula cursus efficitur id ac justo.</p>
@@ -134,14 +140,14 @@
             <h2>Kontakt</h2>
             <nav>
                 <ul>
-                    <li>Adresse: BRA veien 4, 1757 Halden</li>
-                    <li>Telefon: 69608000</li>
-                    <li>E-post: halden@hiof.no</li>
-                    <li>Åpningstider: Stenger 15:00</li>
+                    <li><b>Adresse</b>: BRA veien 4, 1757 Halden</li>
+                    <li><b>Telefon:</b> 69608000</li>
+                    <li><b>E-post:</b> halden@hiof.no</li>
+                    <li><b>Åpningstider:</b> Stenger 15:00</li>
                 </ul>
             </nav>
         </section>
-        <section>
+        <section class="Snarveier">
             <h2>Snarveier</h2>
             <nav>
                 <ul>
@@ -151,14 +157,14 @@
                 </ul>
             </nav>
         </section>
-        <section>
+        <section class="sosiale-medier">
         <h2>Sosiale Medier</h2>
         <nav>
             <ul>
-                <li><a href="index.html">Instagram</a></li>
-                <li><a href="index.html">Facebook</a></li>
-                <li><a href="index.html">Linkedin</a></li>
-                <li><a href="index.html">Pinterest</a></li>
+                <li><a href="index.html"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="index.html"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="index.html"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="index.html"><i class="fa-brands fa-pinterest"></i></a></li>
             </ul>
         </nav>
         </section>
