@@ -28,15 +28,16 @@ html{
     height: 350px;
     background-color: gray;
     display: flex;
-    align-items: center;
-    flex-direction: column;
     align-items: end;
+    flex-direction: column;
     a{
+        align-items: end;
         background-color: white;
         padding: 1rem;
     }
 
     p{
+        align-items: end;
     }
 }
 
@@ -91,11 +92,17 @@ html{
     display: flex;
     flex-direction: column;
     border: 2px solid black;
-    padding: 5rem;
-
+    padding: 6rem;
+    margin-bottom: 1rem;
+    align-items: flex-start;
 
     h3{
-        align-items: center;
+        margin: 0;
+    }
+
+    img{
+        width: 150px;
+        height: auto;
     }
     
 }
@@ -241,4 +248,100 @@ main > aside {
         flex-wrap: wrap;
         padding: 1rem;
     }
+}
+
+@media only screen and (min-width: 800px) {
+
+    #global-header{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+        form{
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        button{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        
+
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            gap: 7rem;
+        }
+    }
+
+    .logo-section{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .sosiale-medier ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    
+    .populære-produkter{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+    }
+
+    .produkt-kort{
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 30%;
+        flex-basis: 33%;
+        box-sizing: border-box  ;
+        
+    }
+
+
+    .tre-valg{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        width: 100%;
+
+
+    }
+
+
+    
+
+    .kategori-kort-1{
+
+    }
+    
+
 }
