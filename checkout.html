@@ -12,21 +12,25 @@
 <body>
     <header id="global-header">
         <nav>
-            <label for="Search"></label>
+            <form>
             <input type="search" id="search" name="search" placeholder="søk her">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            <a href="index.html" id="Logo"><b>Logo</b></a>
+            <label for="search"></label>
+            </form>
+            <button><i class="fa-solid fa-magnifying-glass" id="fa-magnifying-glass"></i></button>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#populære-produkter">Produkter</a></li>
+                <li><a href="index.html" id="Logo" id="Logo"><b>Logo</b></a></li>
                 <li><a href="#populære-kategorier">Kategorier</a></li>
                 <li><a href="footer">Kontakt oss</a></li>
                 <li><i class="fa-solid fa-cart-shopping"></i></li>
+                <li><i class="fa-solid fa-user"></i></li>
+                <i class="fa-solid fa-heart"></i></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="shopping-bag">
             <h2>Kasse</h2>
             <article>
                 <h2>1. SHOPPINGBAGEN DIN</h2>
@@ -48,7 +52,7 @@
                 <p>Farge Beige</p>
             </article>
         </section>
-        <section>
+        <section class="opplysninger">
             <article>
                 <h2>2. DINE OPPLYSNINGER</h2>
                 <h3>Leveringsadresse</h3>
@@ -63,13 +67,13 @@
                     <label for="Postnummer"></label>
                     <input type="text" id="Poststed" name="Poststed" placeholder="Poststed">
                     <label for="Poststed"></label>
-                    <input type="submit" value="Lagre">
+                    <input type="submit" value="Lagre" id="Lagre">
                     <a href="">Avbryt</a>
                 </form>
             </article>
         </section>
 
-        <section>
+        <section class="leveringsvalg">
             <h2>3. LEVERING</h2>
             <article>
                 <h3>LEVERINGSVALG</h3>
@@ -84,7 +88,7 @@
                 </form>
             </article>
         </section>
-        <section>
+        <section class="betaling">
             <h3>4. BETALING</h3>
             <article>
                 <h3>BETAL MED KORT</h3>
@@ -97,7 +101,7 @@
                     <input type="CVC" name="CVC" id="CVC" placeholder="CVC/CVV">
                 </form>
             </article>
-            <article>
+            <article class="å-betale">
                 <p>Å betale inkl, mva.</p>
                 <p>1 199 kr</p>
                 <button>Fullfør kjøp</button>
@@ -105,10 +109,12 @@
                     oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
                     retten til å heve eller avslutte avtaleforholdet dersom det foreligger
                     uriktige eller ufullstendige opplysninger.</p>
+                <form>
                 <input type="checkbox" name="Nyhetsbrev" id="Nyhetsbrev">
-                <label for="Nyhetsbrev">Ja takk! Send nyhetsbrev til meg.</label>
+                <label for="Nyhetsbrev"><br>Ja takk! Send nyhetsbrev til meg.</label>
                 <input type="checkbox" name="melding" id="melding">
                 <label for="melding">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter</label>
+                </form>
             </article>
         </section>
     </main>
