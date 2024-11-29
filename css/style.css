@@ -1,7 +1,9 @@
-html{
 
+.grid-container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
-
 #global-header{
     display: flex;
     flex-direction: column;
@@ -197,8 +199,8 @@ main > aside {
     }
 
     form > #Lagre{
-        height: 50px;
-        width: 75px;
+        height: auto;
+        width: 100%;
     }
 
 
@@ -211,7 +213,7 @@ main > aside {
 
     form label{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
@@ -224,8 +226,6 @@ main > aside {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-    
-
     }
 
     form input{
@@ -337,11 +337,236 @@ main > aside {
     }
 
 
-    
+    .lignende-produkter{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
 
-    .kategori-kort-1{
+
+
+    article{
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 30%;
+        flex-basis: 33%;
+        box-sizing: border-box  ;
+        max-width: 350px;
+    }
+
+
 
     }
+
+    .container{
+        display: flex;
+        flex-grow: 0;
+    }
+
+    .wedding-dress{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        max-width: 750px;
+        gap: 0.5rem;
     
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .stor-bilde{
+        max-height: 600px;
+        grid-column: 1 / 4;
+        grid-row: 1;
+    }
+
+    .liten-bilde-1{
+        max-height: 250px;
+        max-width: 300px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .liten-bilde-2{
+        grid-column: 2;
+        grid-row: 2;
+        max-height: 250px;
+        max-width: 300px;
+    }
+
+    .liten-bilde-3{
+        grid-column: 3;
+        grid-row: 2;
+        max-height: 250px;
+        max-width: 300px;
+    }
+
+}
+
+.shopping-bag{
+    display: flex;
+    align-items: center;
+}
+    
+    .shopping-card{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+
+    .shopping-card img{
+        width: 150px;
+        height: auto;
+    }
+
+    .opplysninger{
+        justify-content: center;
+        
+
+    }
+
+    .opplysninger form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+
+    }
+
+    .opplysninger #Fornavn{
+        grid-column: 1;
+        grid-row: 1;
+
+    }
+
+    .opplysninger #Etternavn{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+
+    .opplysninger #Gateadresse{
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    .opplysninger #Postnummer{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .opplysninger #Poststed{
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .opplysninger #Lagre{
+        grid-column: 1 / span 2;
+        grid-row: 4;
+        width: 100px;
+        
+    }
+
+    .opplysninger a{
+        grid-column: 1 / span 2;
+        grid-row: 5;
+    }
+
+
+    .leveringsvalg{
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .leveringsvalg .levering-kort-1{
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+
+        width: 100%;
+        
+    }
+
+    .leveringsvalg .levering-kort-2{
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+
+        width: 100%;
+    }
+
+    .leveringsvalg .levering-kort-3{
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .betaling {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .betaling form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 1rem
+    }
+
+
+    .betaling form #Kortnummer{
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    .betaling form #Utløpsdato{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .betaling form #CVC{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    
+
+    .leveringsvalg ul{
+        border: 1px solid black;
+        list-style: none;
+        width: 100%;
+    }
+
+    .å-betale{
+        text-align: center;
+    }
+
+    .å-betale button{
+        width: 412.533px;
+        
+    }
+
+    .å-betale p{
+        text-align: center;
+    }
+
+    .nyhetsbrev{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .å-betale form > #label-1{
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .å-betale form > #label-2{
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
 
 }

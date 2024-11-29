@@ -10,6 +10,7 @@
     <link href="./ikoner/css/solid.css" rel="stylesheet">
 </head>
 <body>
+    <div class="grid-container">
     <header id="global-header">
         <nav>
             <form>
@@ -30,26 +31,32 @@
         </nav>
     </header>
     <main>
-        <section class="shopping-bag">
-            <h2>Kasse</h2>
-            <article>
-                <h2>1. SHOPPINGBAGEN DIN</h2>
+        <h2>Kasse</h2>
+            <section class="shopping-bag">
+            <h2>1. SHOPPINGBAGEN DIN</h2>
+            <article class="shopping-card">
                 <img src="./bilder/wedding-dress.jpg">
+                <section class="tekst">
                 <h3>Product Name</h3>
                 <p>kr 1999</p>
                 <p>Farge Beige</p>
+                </section>
             </article>
-            <article>
+            <article class="shopping-card">
                 <img src="./bilder/wedding-dress.jpg">
+                <section class="tekst">
                 <h3>Product Name</h3>
                 <p>kr 1999</p>
                 <p>Farge Beige</p>
+                </section>
             </article>
-            <article>
+            <article class="shopping-card">
                 <img src="./bilder/wedding-dress.jpg">
+                <section class="tekst">
                 <h3>Product Name</h3>
                 <p>kr 1999</p>
                 <p>Farge Beige</p>
+                </section>
             </article>
         </section>
         <section class="opplysninger">
@@ -58,16 +65,17 @@
                 <h3>Leveringsadresse</h3>
                 <form>
                     <input type="text" id="Fornavn" name="fornavn" placeholder="Fornavn">
-                    <label for="Fornavn"></label>
+                    <label for="Fornavn">Fornavn</label>
                     <input type="text" id="Etternavn" name="Etternavn" placeholder="Etternavn">
-                    <label for="Etternavn"></label>
+                    <label for="Etternavn">Etternavn</label>
                     <input type="text" id="Gateadresse" name="Gateadresse" placeholder="Gateadresse">
-                    <label for="Gateadresse"></label>
+                    <label for="Gateadresse">Gateadresse</label>
                     <input type="text" id="Postnummer" name="Postnummer" placeholder="Postnummer">
-                    <label for="Postnummer"></label>
+                    <label for="Postnummer">Postnummer</label>
                     <input type="text" id="Poststed" name="Poststed" placeholder="Poststed">
-                    <label for="Poststed"></label>
+                    <label for="Poststed">Poststed</label>
                     <input type="submit" value="Lagre" id="Lagre">
+                    <label for="Lagre"></label>
                     <a href="">Avbryt</a>
                 </form>
             </article>
@@ -78,13 +86,40 @@
             <article>
                 <h3>LEVERINGSVALG</h3>
                 <form>
-                    <!-- Avviker fra kurset, radio-->
-                    <input type="radio" id="Hjemlevering" name="Hjemlevering" value="Hjemlevering">
-                    <label for="Hjemlevering"><b>Ekspress Hjemlevering<b></label>
-                    <input type="radio" id="Utlevering" name="Utlervering" value="Utlevering">
-                    <label for="Hjemlevering"><b>Ekspress Pakke til Utleveringssted<b></label>
+                    <ul>
+                        <li>
+                            <label for="Hjemlevering">
+                            <input type="radio" id="Hjemlevering" name="Hjemlevering" value="Hjemlevering">
+                            Ekspress Hjemlevering
+                        </label>
+                        <p>3 - 4 virkedager</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label for="Utlevering">
+                            <input type="radio" id="Utlevering" name="Utlervering" value="Utlevering">
+                            Ekspress Pakke til Utleveringssted
+                        </label>
+                        <p>1 - 3 virkedager</p>
+
+
+                       
+                    </li>
+                    </ul>
+                    <ul>
+                        <li>
+                        <label for="Hjemlevering">
+                        
                     <input type="radio" id="Standard" name="Standard" value="Standard">
-                    <label for="Hjemlevering"><b>Standard Hjemlevering<b></label>
+                    Standard Hjemlevering
+                    </label>
+                    <p>5 - 6 virkedager</p>
+                        </li>
+                    </ul>
+                    
+                    
+                    </section>
                 </form>
             </article>
         </section>
@@ -105,15 +140,17 @@
                 <p>Å betale inkl, mva.</p>
                 <p>1 199 kr</p>
                 <button>Fullfør kjøp</button>
-                <p>Du bekrefter herved at opplysningene og dokumentene du har
-                    oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
-                    retten til å heve eller avslutte avtaleforholdet dersom det foreligger
+                <p>Du bekrefter herved at opplysningene og dokumentene du har<br>
+                    oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg<br>
+                    retten til å heve eller avslutte avtaleforholdet dersom det foreligger<br>
                     uriktige eller ufullstendige opplysninger.</p>
-                <form>
+                <form class="nyhetsbrev">
+                    <label for="Nyhetsbrev" id="label-1">Ja takk! Send nyhetsbrev til meg.
                 <input type="checkbox" name="Nyhetsbrev" id="Nyhetsbrev">
-                <label for="Nyhetsbrev"><br>Ja takk! Send nyhetsbrev til meg.</label>
+                </label>
+                <label for="melding" id="label-2">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter
                 <input type="checkbox" name="melding" id="melding">
-                <label for="melding">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter</label>
+                </label>
                 </form>
             </article>
         </section>
@@ -156,6 +193,6 @@
         </nav>
         </section>
     </footer>
-    
+    </div>
 </body>
 </html>
